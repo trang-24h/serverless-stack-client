@@ -32,7 +32,7 @@ function App(props) {
     userHasAuthenticated(false);
     props.history.push("/login");
   }
-
+  console.log(process.env.REACT_APP_TEST_VAR);
   return (
     !isAuthenticating && (
       <div className="App container">
